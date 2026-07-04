@@ -1,0 +1,131 @@
+@use '../../styles/size/typography.scss';
+
+.ui-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ui-radio {
+    --ui-radio-accent-color: var(--blue-500);
+
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+
+    &-root {
+        all: unset;
+        background-color: var(--gray-0);
+        border: var(--border-M) solid var(--gray-700);
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow-S);
+
+        &:hover {
+            background-color: var(--gray-300);
+        }
+
+        &[data-state='checked'] {
+            border-color: var(--ui-radio-accent-color);
+        }
+    }
+
+    &-indicator {
+        border-radius: 9999px;
+        background-color: var(--ui-radio-accent-color);
+    }
+
+    &-label {
+        color: var(--text-primary);
+        padding-left: 15px;
+        line-height: 1;
+        user-select: none;
+    }
+
+    &-disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &-size--XS {
+        .ui-radio-root {
+            width: 12px;
+            height: 12px;
+        }
+
+        .ui-radio-indicator {
+            width: 6px;
+            height: 6px;
+        }
+
+        .ui-radio-label {
+            @include typography.text(XS);
+        }
+    }
+
+    &-size--S {
+        .ui-radio-root {
+            width: 14px;
+            height: 14px;
+        }
+
+        .ui-radio-indicator {
+            width: 8px;
+            height: 8px;
+        }
+
+        .ui-radio-label {
+            @include typography.text(S);
+        }
+    }
+
+    &-size--M {
+        .ui-radio-root {
+            width: 16px;
+            height: 16px;
+        }
+
+        .ui-radio-indicator {
+            width: 10px;
+            height: 10px;
+        }
+
+        .ui-radio-label {
+            @include typography.text(M);
+        }
+    }
+
+    &-size--L {
+        .ui-radio-root {
+            width: 20px;
+            height: 20px;
+        }
+
+        .ui-radio-indicator {
+            width: 12px;
+            height: 12px;
+        }
+
+        .ui-radio-label {
+            @include typography.text(L);
+        }
+    }
+
+    &-size--XL {
+        .ui-radio-root {
+            width: 24px;
+            height: 24px;
+        }
+
+        .ui-radio-indicator {
+            width: 14px;
+            height: 14px;
+        }
+
+        .ui-radio-label {
+            @include typography.text(XL);
+        }
+    }
+}

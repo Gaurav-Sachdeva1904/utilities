@@ -1,0 +1,9 @@
+{
+    "name": "@utilities/shell",
+    "version": "1.0.0",
+    "type": "module",
+    "repository": "git@github.com:Gaurav-Sachdeva1904/Frontend.git",
+    "author": "Gaurav Sachdeva <53521145+Gaurav-Sachdeva1904@users.noreply.github.com>",
+    "license": "MIT",
+    "private": true
+}

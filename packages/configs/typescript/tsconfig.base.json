@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        /* Output */
+        "declaration": true,
+        "declarationMap": false,
+        "emitDeclarationOnly": false,
+
+        /* Strict Type Checks */
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+
+        /* Imports & JSX */
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "allowJs": false,
+
+        /* Paths & Base */
+        "sourceMap": false,
+
+        "ignoreDeprecations": "5.0",
+
+        "skipLibCheck": true
+    }
+}

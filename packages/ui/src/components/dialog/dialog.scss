@@ -1,0 +1,48 @@
+.dialog-container {
+    background: var(--gray-50);
+    border-radius: 8px;
+    left: 50%;
+    padding: 1.5rem;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 250px;
+    box-shadow: var(--shadow-L);
+    z-index: 1000;
+
+    .dialog-heading {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .dialog-description {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .content {
+        margin-bottom: 1rem;
+    }
+
+    .dialog-footer {
+        margin-top: 16px;
+        display: flex;
+        align-items: flex-end;
+        gap: 16px;
+        justify-content: end;
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 0.25rem;
+        top: 0.25rem;
+    }
+}
+
+.overlay {
+    background: var(--gray-950);
+    inset: 0;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 999;
+}

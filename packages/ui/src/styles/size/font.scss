@@ -1,0 +1,35 @@
+:root {
+    /* ===============================
+     FONT SIZES
+     =============================== */
+    --font-XS: 12px;
+    --font-S: 14px;
+    --font-M: 16px;
+    --font-L: 18px;
+    --font-XL: 20px;
+    --font-2XL: 24px;
+    --font-3XL: 30px;
+    --font-4XL: 36px;
+    --font-5XL: 48px;
+
+    /* ===============================
+     LINE HEIGHTS
+     =============================== */
+    --line-XS: 16px;
+    --line-S: 20px;
+    --line-M: 24px;
+    --line-L: 28px;
+    --line-XL: 28px;
+    --line-2XL: 32px;
+    --line-3XL: 36px;
+    --line-4XL: 44px;
+    --line-5XL: 56px;
+
+    /* ===============================
+     FONT WEIGHTS (optional)
+     =============================== */
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+}

@@ -1,0 +1,23 @@
+@use '../../styles/size/typography.scss';
+
+.ui-text {
+    &-size--XS {
+        @include typography.text(XS);
+    }
+
+    &-size--S {
+        @include typography.text(S);
+    }
+
+    &-size--M {
+        @include typography.text(M);
+    }
+
+    &-size--L {
+        @include typography.text(L);
+    }
+
+    &-size--XL {
+        @include typography.text(XL);
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
+    "plugins": ["stylelint-order"],
+    "rules": {
+        "order/properties-alphabetical-order": true,
+        "custom-property-pattern": "^([a-zA-Z][a-zA-Z0-9]*)(-[a-zA-Z0-9]+)*$"
+    },
+    "ignoreFiles": [
+        "**/node_modules/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/vendor/**",
+        "**/storybook-static/**"
+    ]
+}

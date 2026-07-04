@@ -1,0 +1,11 @@
+// .docs-story div[scale='1'] {
+//     transform: none;
+// }
+
+// #storybook-docs .docs-story .innerZoomElementWrapper .sb-story.sb-unstyled {
+//     overflow: initial;
+// }
+
+.docs-story :not(.sb-story *) {
+    transform: none;
+}

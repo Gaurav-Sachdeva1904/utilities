@@ -1,0 +1,139 @@
+.ui-light {
+    /* =====================================================
+     GRAYS — Cool Neutral (Foundation)
+     ===================================================== */
+    --gray-0: #ffffff;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2933;
+    --gray-900: #111827;
+    --gray-950: #0b0f19;
+
+    /* =====================================================
+     BRAND COLORS
+     ===================================================== */
+    --blue-50: #eff6ff;
+    --blue-100: #dbeafe;
+    --blue-300: #93c5fd;
+    --blue-500: #2563eb;
+    --blue-700: #1e40af;
+
+    --purple-50: #f5f3ff;
+    --purple-100: #ede9fe;
+    --purple-300: #c4b5fd;
+    --purple-500: #7c3aed;
+    --purple-700: #5b21b6;
+
+    /* =====================================================
+     EXTENDED PALETTE
+     ===================================================== */
+    --red-50: #fef2f2;
+    --red-100: #fee2e2;
+    --red-300: #fca5a5;
+    --red-500: #dc2626;
+    --red-700: #7f1d1d;
+
+    --green-50: #ecfdf5;
+    --green-100: #d1fae5;
+    --green-300: #6ee7b7;
+    --green-500: #16a34a;
+    --green-700: #14532d;
+
+    --yellow-50: #fffbeb;
+    --yellow-100: #fef3c7;
+    --yellow-300: #fcd34d;
+    --yellow-500: #d97706;
+    --yellow-700: #92400e;
+
+    --orange-50: #fff7ed;
+    --orange-100: #ffedd5;
+    --orange-300: #fdba74;
+    --orange-500: #ea580c;
+    --orange-700: #9a3412;
+
+    --teal-50: #f0fdfa;
+    --teal-100: #ccfbf1;
+    --teal-300: #5eead4;
+    --teal-500: #0d9488;
+    --teal-700: #115e59;
+
+    --cyan-50: #ecfeff;
+    --cyan-100: #cffafe;
+    --cyan-300: #67e8f9;
+    --cyan-500: #0891b2;
+    --cyan-700: #164e63;
+
+    /* =====================================================
+     SURFACES & TEXT
+     ===================================================== */
+    --bg-primary: var(--gray-50);
+    --bg-secondary: var(--gray-200);
+    --bg-elevated: var(--gray-0);
+
+    --text-primary: var(--gray-800);
+    --text-secondary: var(--gray-600);
+    --text-muted: var(--gray-500);
+
+    --border-default: var(--gray-200);
+    --border-subtle: var(--gray-100);
+
+    /* =====================================================
+     SEMANTIC STATES
+     ===================================================== */
+    --semantic-success-bg: var(--green-50);
+    --semantic-success-fg: var(--green-700);
+    --semantic-success-border: var(--green-300);
+
+    --semantic-warning-bg: var(--yellow-50);
+    --semantic-warning-fg: var(--yellow-700);
+    --semantic-warning-border: var(--yellow-300);
+
+    --semantic-error-bg: var(--red-50);
+    --semantic-error-fg: var(--red-700);
+    --semantic-error-border: var(--red-300);
+
+    --semantic-info-bg: var(--blue-50);
+    --semantic-info-fg: var(--blue-700);
+    --semantic-info-border: var(--blue-300);
+
+    /* =====================================================
+     ACCENTS (Actions & Emphasis)
+     ===================================================== */
+    --accent-primary: var(--blue-500);
+    --accent-primary-hover: var(--blue-700);
+
+    --accent-secondary: var(--purple-500);
+    --accent-secondary-hover: var(--purple-700);
+
+    --accent-teal: var(--teal-500);
+    --accent-teal-hover: var(--teal-700);
+
+    --accent-success: var(--green-500);
+    --accent-warning: var(--yellow-500);
+    --accent-danger: var(--red-500);
+    --accent-info: var(--cyan-500);
+
+    /* =====================================================
+     ON-ACCENT (Contrast Safety)
+     ===================================================== */
+    --on-accent-primary: #ffffff;
+    --on-accent-secondary: #ffffff;
+    --on-accent-teal: #ffffff;
+    --on-accent-success: #ffffff;
+    --on-accent-warning: #1f2933;
+    --on-accent-danger: #ffffff;
+    --on-accent-info: #ffffff;
+
+    /* =====================================================
+     ELEVATION
+     ===================================================== */
+    --shadow-S: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-M: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-L: 0 12px 32px rgba(0, 0, 0, 0.12);
+}

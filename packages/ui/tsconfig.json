@@ -1,0 +1,23 @@
+{
+    "extends": "@utilities/configs/typescript/tsconfig.frontend.json",
+    "compilerOptions": {
+        /* Entry - Output */
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "baseUrl": ".",
+        "ignoreDeprecations": "6.0",
+
+        "typeRoots": ["./types", "./node_modules/@types", "../../node_modules/@types"],
+
+        "paths": {
+            "@interface/*": ["src/interface/*"],
+            "@components/*": ["src/components/*"],
+            "@constants/*": ["src/constants/*"],
+            "@hooks/*": ["src/hooks/*"],
+            "@styles/*": ["src/styles/*"],
+            "@utils/*": ["src/utils/*"]
+        }
+    },
+    "exclude": ["node_modules", "dist"],
+    "include": ["src", "types"]
+}

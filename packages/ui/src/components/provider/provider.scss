@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        outline: none;
+    }
+}
+
+.ui-provider {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: sans-serif;
+    height: 100vh;
+
+    &.storybook {
+        background-color: unset;
+        height: auto;
+    }
+
+    div[data-radix-popper-content-wrapper] {
+        border: 1px solid var(--gray-300);
+        border-radius: 8px;
+        z-index: 9999 !important;
+        box-shadow: var(--shadow-M);
+    }
+}

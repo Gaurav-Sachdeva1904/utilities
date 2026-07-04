@@ -1,0 +1,50 @@
+:root {
+    /* ===============================
+     SPACING (Padding / Margin)
+     =============================== */
+    --space-XS: 4px;
+    --space-S: 8px;
+    --space-M: 12px;
+    --space-L: 16px;
+    --space-XL: 24px;
+    --space-2XL: 32px;
+    --space-3XL: 48px;
+    --space-4XL: 64px;
+    --space-5XL: 96px;
+
+    /* ===============================
+     BORDER WIDTHS
+     =============================== */
+    --border-XS: 0.5px;
+    --border-S: 1px;
+    --border-M: 2px;
+    --border-L: 4px;
+
+    /* ===============================
+     BORDER RADIUS
+     =============================== */
+    --radius-XS: 2px;
+    --radius-S: 4px;
+    --radius-M: 6px;
+    --radius-L: 8px;
+    --radius-XL: 12px;
+    --radius-2XL: 16px;
+    --radius-FULL: 9999px;
+
+    /* ===============================
+     ICON SIZES
+     =============================== */
+    --icon-XS: 12px;
+    --icon-S: 16px;
+    --icon-M: 20px;
+    --icon-L: 24px;
+    --icon-XL: 32px;
+    --icon-2XL: 40px;
+
+    /* ===============================
+     COMPONENT HEIGHTS (touch-safe)
+     =============================== */
+    --control-S: 32px;
+    --control-M: 40px;
+    --control-L: 48px;
+}

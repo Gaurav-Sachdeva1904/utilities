@@ -1,0 +1,57 @@
+:root {
+    /* =========================================
+     TYPOGRAPHY TOKENS
+     Combines: font-size + line-height + weight
+     ========================================= */
+
+    /* ---------- XS ---------- */
+    --TEXT-XS-font: var(--font-XS);
+    --TEXT-XS-line: var(--line-XS);
+    --TEXT-XS-weight: var(--weight-regular);
+
+    /* ---------- S ---------- */
+    --TEXT-S-font: var(--font-S);
+    --TEXT-S-line: var(--line-S);
+    --TEXT-S-weight: var(--weight-regular);
+
+    /* ---------- M (Body) ---------- */
+    --TEXT-M-font: var(--font-M);
+    --TEXT-M-line: var(--line-M);
+    --TEXT-M-weight: var(--weight-regular);
+
+    /* ---------- L ---------- */
+    --TEXT-L-font: var(--font-L);
+    --TEXT-L-line: var(--line-L);
+    --TEXT-L-weight: var(--weight-medium);
+
+    /* ---------- XL ---------- */
+    --TEXT-XL-font: var(--font-XL);
+    --TEXT-XL-line: var(--line-XL);
+    --TEXT-XL-weight: var(--weight-medium);
+
+    /* ---------- 2XL (Section heading) ---------- */
+    --TEXT-2XL-font: var(--font-2XL);
+    --TEXT-2XL-line: var(--line-2XL);
+    --TEXT-2XL-weight: var(--weight-semibold);
+
+    /* ---------- 3XL ---------- */
+    --TEXT-3XL-font: var(--font-3XL);
+    --TEXT-3XL-line: var(--line-3XL);
+    --TEXT-3XL-weight: var(--weight-semibold);
+
+    /* ---------- 4XL ---------- */
+    --TEXT-4XL-font: var(--font-4XL);
+    --TEXT-4XL-line: var(--line-4XL);
+    --TEXT-4XL-weight: var(--weight-bold);
+
+    /* ---------- 5XL (Hero) ---------- */
+    --TEXT-5XL-font: var(--font-5XL);
+    --TEXT-5XL-line: var(--line-5XL);
+    --TEXT-5XL-weight: var(--weight-bold);
+}
+
+@mixin text($size) {
+    font-size: var(--TEXT-#{$size}-font);
+    line-height: var(--TEXT-#{$size}-line);
+    font-weight: var(--TEXT-#{$size}-weight);
+}

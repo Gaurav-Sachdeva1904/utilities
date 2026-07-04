@@ -1,0 +1,91 @@
+@use '../../styles/size/typography.scss';
+@use '../../styles/theme/colors.scss';
+@use '../../styles/size/layout.scss';
+
+.ui-checkbox {
+    &-root {
+        all: unset;
+        background-color: var(--gray-0);
+        border: var(--border-M) solid var(--gray-700);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow-S);
+
+        &:hover {
+            background-color: var(--gray-300);
+        }
+    }
+    &-indicator {
+        width: 100%;
+        background-color: var(--gray-700);
+        height: 100%;
+
+        svg {
+            vertical-align: top;
+        }
+    }
+
+    &-label {
+        color: var(--text-primary);
+        padding-left: 15px;
+        font-size: 15px;
+        line-height: 1;
+    }
+
+    &-size--XS {
+        .ui-checkbox-root {
+            width: 12px;
+            height: 12px;
+        }
+
+        .ui-checkbox-label {
+            @include typography.text(XS);
+        }
+    }
+
+    &-size--S {
+        .ui-checkbox-root {
+            width: 14px;
+            height: 14px;
+        }
+
+        .ui-checkbox-label {
+            @include typography.text(S);
+        }
+    }
+
+    &-size--M {
+        .ui-checkbox-root {
+            width: 16px;
+            height: 16px;
+        }
+
+        .ui-checkbox-label {
+            @include typography.text(M);
+        }
+    }
+
+    &-size--L {
+        .ui-checkbox-root {
+            width: 20px;
+            height: 20px;
+        }
+
+        .ui-checkbox-label {
+            @include typography.text(L);
+        }
+    }
+
+    &-size--XL {
+        .ui-checkbox-root {
+            width: 24px;
+            height: 24px;
+        }
+
+        .ui-checkbox-label {
+            @include typography.text(XL);
+        }
+    }
+}

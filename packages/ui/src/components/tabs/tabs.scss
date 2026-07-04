@@ -1,0 +1,98 @@
+@use '../../styles/size/typography.scss';
+
+.ui-tabs {
+    width: 100%;
+    max-width: 100%;
+
+    &-list {
+        display: inline-flex;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        box-shadow: var(--shadow-S);
+        overflow: hidden;
+    }
+
+    &-trigger {
+        all: unset;
+        border-bottom: var(--border-S) solid var(--gray-300);
+        flex: 1 1 0;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gray-500);
+        cursor: pointer;
+        transition:
+            background-color 120ms ease,
+            color 120ms ease;
+
+        &[data-state='active'] {
+            color: var(--gray-700);
+        }
+
+        &[data-state='active']::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            left: 0;
+            height: 2px;
+            background-color: var(--gray-700);
+        }
+
+        &:hover:not([data-state='active']):not(:disabled) {
+            background-color: var(--gray-100);
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--blue-500);
+            outline-offset: -2px;
+        }
+
+        &:disabled {
+            color: var(--gray-300);
+            cursor: not-allowed;
+        }
+    }
+
+    &-size--XS {
+        .ui-tabs-trigger {
+            @include typography.text(XS);
+            min-height: 40px;
+            padding: 0 6px;
+        }
+    }
+
+    &-size--S {
+        .ui-tabs-trigger {
+            @include typography.text(S);
+            min-height: 46px;
+            padding: 0 8px;
+        }
+    }
+
+    &-size--M {
+        .ui-tabs-trigger {
+            @include typography.text(M);
+            min-height: 58px;
+            padding: 0 10px;
+        }
+    }
+
+    &-size--L {
+        .ui-tabs-trigger {
+            @include typography.text(L);
+            min-height: 64px;
+            padding: 0 12px;
+        }
+    }
+
+    &-size--XL {
+        .ui-tabs-trigger {
+            @include typography.text(XL);
+            min-height: 72px;
+            padding: 0 16px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "extends": "@utilities/configs/typescript/tsconfig.backend.json",
+    "compilerOptions": {
+        /* Entry - Output */
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "baseUrl": ".",
+
+        "types": ["node"],
+
+        "typeRoots": ["./types", "./node_modules/@types", "../../node_modules/@types"]
+    },
+    "exclude": ["node_modules", "dist"],
+    "include": ["src", "types"]
+}

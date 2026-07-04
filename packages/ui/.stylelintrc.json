@@ -1,0 +1,3 @@
+{
+    "extends": ["@utilities/configs/stylelint/.stylelintrc.json"]
+}

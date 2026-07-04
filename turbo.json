@@ -1,0 +1,21 @@
+{
+    "$schema": "https://turbo.build",
+    "tasks": {
+        "build": {
+            "dependsOn": ["^build"],
+            "outputs": [".next/**", "dist/**", "build/**", "out/**"]
+        },
+        "storybook:build": {
+            "dependsOn": ["^storybook:build"]
+        },
+        "storybook:start": {
+            "dependsOn": ["^storybook:start"]
+        },
+        "lint": {
+            "outputs": []
+        },
+        "lint:fix": {
+            "outputs": []
+        }
+    }
+}

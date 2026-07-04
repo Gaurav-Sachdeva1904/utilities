@@ -1,0 +1,32 @@
+@use '../../styles/size/typography.scss';
+
+.ui-tag {
+    padding: 4px 8px;
+    color: #fff;
+    width: fit-content;
+    border-radius: 4px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    &-size--XS {
+        @include typography.text(XS);
+    }
+
+    &-size--S {
+        @include typography.text(S);
+    }
+
+    &-size--M {
+        @include typography.text(M);
+    }
+
+    &-size--L {
+        @include typography.text(L);
+    }
+
+    &-size--XL {
+        @include typography.text(XL);
+    }
+}

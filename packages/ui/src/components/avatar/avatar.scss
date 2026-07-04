@@ -1,0 +1,47 @@
+@use '../../styles/size/typography.scss';
+
+.avatar {
+    align-items: center;
+    background-color: var(--green-700);
+    border-radius: 50%;
+    display: inline-flex;
+    color: var(--gray-50);
+    justify-content: center;
+    user-select: none;
+    vertical-align: middle;
+
+    &-size--XS {
+        @include typography.text(XS);
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    &-size--S {
+        @include typography.text(S);
+        height: 1.75rem;
+        width: 1.75rem;
+    }
+
+    &-size--M {
+        @include typography.text(M);
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    &-size--L {
+        @include typography.text(L);
+        height: 2.75rem;
+        width: 2.75rem;
+    }
+
+    &-size--XL {
+        @include typography.text(XL);
+        height: 3.25rem;
+        width: 3.25rem;
+    }
+
+    .avatar-image {
+        border-radius: inherit;
+        object-fit: cover;
+    }
+}

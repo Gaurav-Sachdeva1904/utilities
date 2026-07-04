@@ -1,0 +1,26 @@
+@use '../../styles/size/typography.scss';
+
+.ui-card {
+    background-color: var(--bg-elevated);
+    box-shadow: var(--shadow-M);
+    border: var(--border-S) solid var(--gray-300);
+    border-radius: 4px;
+
+    padding: 12px;
+    min-width: 150px;
+
+    width: fit-content;
+
+    &-header {
+        @include typography.text(L);
+        margin-bottom: 8px;
+    }
+
+    &-separator {
+        margin: 8px 0 12px;
+    }
+
+    &-content {
+        @include typography.text(S);
+    }
+}

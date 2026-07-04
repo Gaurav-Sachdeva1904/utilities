@@ -1,0 +1,217 @@
+@use '../../styles/size/typography.scss';
+@use '../../styles/size/layout.scss';
+
+.btn-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border: var(--border-S) solid var(--gray-800);
+    padding: 4px 10px;
+    border-radius: var(--border-L);
+
+    &.icon-only {
+        padding: 4px 5px;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    &.outline {
+        border-width: var(--border-M);
+    }
+
+    &-size--XS {
+        @include typography.text(XS);
+        height: 24px;
+
+        svg {
+            width: var(--icon-XS);
+            height: var(--icon-XS);
+        }
+    }
+
+    &-size--S {
+        @include typography.text(S);
+        height: 28px;
+
+        svg {
+            width: var(--icon-S);
+            height: var(--icon-S);
+        }
+    }
+
+    &-size--M {
+        @include typography.text(M);
+        height: 32px;
+
+        svg {
+            width: var(--icon-M);
+            height: var(--icon-M);
+        }
+    }
+
+    &-size--L {
+        @include typography.text(L);
+        height: 36px;
+
+        svg {
+            width: var(--icon-L);
+            height: var(--icon-L);
+        }
+    }
+
+    &-size--XL {
+        @include typography.text(XL);
+        height: 40px;
+
+        svg {
+            width: var(--icon-XL);
+            height: var(--icon-XL);
+        }
+    }
+
+    &.accent {
+        background-color: var(--blue-500);
+        color: #fff;
+
+        &.outline {
+            background-color: transparent;
+            color: var(--blue-700);
+            border-color: var(--blue-700);
+
+            svg {
+                stroke: var(--blue-700) !important;
+            }
+
+            &:hover {
+                background-color: var(--blue-500);
+                color: #fff;
+
+                svg {
+                    stroke: #fff !important;
+                }
+            }
+        }
+    }
+
+    &.primary {
+        background-color: var(--gray-600);
+        color: var(--gray-50);
+        border-color: var(--gray-600);
+
+        &.outline {
+            background-color: transparent;
+            color: var(--gray-600);
+            border-color: var(--gray-600);
+
+            svg {
+                stroke: var(--gray-600) !important;
+            }
+
+            &:hover {
+                background-color: var(--gray-600);
+                color: var(--gray-50);
+
+                svg {
+                    stroke: var(--gray-50) !important;
+                }
+            }
+        }
+    }
+
+    &.secondary {
+        background-color: var(--gray-950);
+        color: var(--gray-200);
+        border-color: var(--gray-950);
+
+        &.outline {
+            background-color: transparent;
+            color: var(--gray-950);
+            border-color: var(--gray-950);
+
+            svg {
+                stroke: var(--gray-950) !important;
+            }
+
+            &:hover {
+                background-color: var(--gray-950);
+                color: var(--gray-50);
+
+                svg {
+                    stroke: var(--gray-50) !important;
+                }
+            }
+        }
+    }
+
+    &.negative {
+        background-color: var(--red-500);
+        color: #fff;
+        border-color: var(--red-500);
+
+        &.outline {
+            background-color: transparent;
+            color: var(--red-500);
+            border-color: var(--red-500);
+
+            svg {
+                stroke: var(--red-500) !important;
+            }
+
+            &:hover {
+                background-color: var(--red-500);
+                color: #fff;
+
+                svg {
+                    stroke: #fff !important;
+                }
+            }
+        }
+    }
+
+    &.quite {
+        color: var(--gray-700);
+        background-color: transparent;
+        border-color: transparent;
+
+        &:not(.icon-only):hover {
+            background-color: var(--gray-300);
+        }
+
+        &.icon-only:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--blue-500);
+        outline-offset: 2px;
+    }
+
+    &.link {
+        text-decoration: underline;
+        color: var(--blue-500);
+        padding: 0;
+        background-color: transparent;
+        border: unset;
+
+        &:hover {
+            background-color: none;
+        }
+
+        &:focus-visible {
+            text-decoration-style: double;
+            outline: unset;
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: 0.6;
+    }
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(0.75);
+    }
+}
