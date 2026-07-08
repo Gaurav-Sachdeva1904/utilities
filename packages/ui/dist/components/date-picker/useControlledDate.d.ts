@@ -1,0 +1,1 @@
+export declare function useControllableDate<T>(controlled: T | undefined, defaultValue: T | undefined, onChange?: (value: T) => void, isControlled?: boolean): readonly [T | undefined, (next: T) => void];

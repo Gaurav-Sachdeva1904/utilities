@@ -1,0 +1,23 @@
+import { default as React, ReactNode } from 'react';
+import { IconName } from '../icon';
+import { Size } from '../../interface/index';
+import { ButtonVariant } from '../../interface/button';
+type Props = {
+    children?: ReactNode;
+    label?: string;
+    ariaLabel?: string;
+    className?: string;
+    variant?: ButtonVariant;
+    outline?: boolean;
+    size?: Size;
+    quite?: boolean;
+    icon?: IconName;
+    iconOnly?: boolean;
+    disabled?: boolean;
+    loading?: boolean;
+    iconColor?: string;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+};
+export type ButtonProps = Props;
+declare const Button: (btnProps: Props) => React.JSX.Element;
+export default Button;
