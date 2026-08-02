@@ -120,6 +120,11 @@ export const Playground: Story = {
         items: [
             { key: 'Apple', value: 'apple' },
             { key: 'Orange', value: 'orange' },
+            { key: 'Potatoes', value: 'potatoes' },
+            { key: 'Tomatoes', value: 'tomatoes' },
+            { key: 'Option 1', value: 'option1' },
+            { key: 'Option 2', value: 'option2' },
+            { key: 'Option 3', value: 'option3' },
         ],
         placeholder: 'Select fruit',
     },

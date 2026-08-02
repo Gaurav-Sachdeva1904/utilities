@@ -1,10 +1,10 @@
 import {
+  BaseError
+} from "./chunk-EVQV3LGW.js";
+import {
   MAPPED_ERROR_CODES,
   UNIQUE_VIOLATION_REGEX
 } from "./chunk-CMKCH3ON.js";
-import {
-  BaseError
-} from "./chunk-EVQV3LGW.js";
 
 // src/error/databaseError.ts
 var DatabaseError = class extends BaseError {

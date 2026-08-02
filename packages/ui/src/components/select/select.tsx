@@ -13,8 +13,9 @@ import {
     Separator,
     ItemText,
     ItemIndicator,
+    Viewport,
 } from '@radix-ui/react-select';
-import { Label as RadixLabel } from 'radix-ui';
+import { Label as RadixLabel, ScrollArea } from 'radix-ui';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import Button from '@components/button';
 import Icon, { IconName } from '@components/icon';
@@ -210,7 +211,18 @@ function Select(props: SelectProps) {
                         sideOffset={4}
                         onPointerMove={releaseInitialHighlight}
                         onKeyDown={releaseInitialHighlight}>
-                        {parsedItems.menuItems.length > 0 ? renderGroups() : null}
+                        <ScrollArea.Root className="ScrollAreaRoot" type="auto">
+                            <Viewport asChild>
+                                <ScrollArea.Viewport className="select-viewport">
+                                    {parsedItems.menuItems.length > 0 ? renderGroups() : null}
+                                </ScrollArea.Viewport>
+                            </Viewport>
+                            <ScrollArea.Scrollbar
+                                className="ScrollAreaScrollbar"
+                                orientation="vertical">
+                                <ScrollArea.Thumb className="ScrollAreaThumb" />
+                            </ScrollArea.Scrollbar>
+                        </ScrollArea.Root>
                     </Content>
                 </Portal>
             </Root>

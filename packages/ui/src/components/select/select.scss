@@ -74,6 +74,8 @@
     min-width: 160px;
     padding: 6px 4px;
     width: var(--radix-select-trigger-width);
+    max-height: var(--radix-select-content-available-height);
+    overflow-y: auto;
 
     .select-label {
         padding: 0 12px;
